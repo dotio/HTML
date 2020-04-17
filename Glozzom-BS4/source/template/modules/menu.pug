@@ -1,0 +1,8 @@
+-var menu = ["Home","About Us","Services", "Blog", "Contact"]
+-var link = ['index.html', 'about.html', 'services.html', 'blog.html', 'contact.html']
+
+
+ul.navbar-nav.ml-auto
+	-for(var i= 0; i < menu.length; i++)
+		li.nav-item
+			a.nav-link(href= link[i])= menu[i]

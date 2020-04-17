@@ -1,0 +1,39 @@
+.btn {
+  box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.18);
+  border: 4px solid rgba(0, 0, 0, 0.23);
+  background-image: linear-gradient(to top, #2798b9 0%, #3ab6da 100%);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+	color: #fff;
+  padding: 28px 30px 29px 29px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.55s ease;
+  margin: 0px auto;
+  margin-top: 73px;
+  &:hover {
+    background-color: darken($text-primary, 10%);
+    border-color: darken($text-primary, 10%);
+  }
+  &:active {
+    background-color: darken($text-primary, 20%);
+  }
+  &:focus {
+    background-color: darken($text-primary, 10%);
+  }
+}
+
+.btn-order{
+  border: 1px solid $text-primary;
+}
+
+.btn-more{
+  background: transparent;
+  border: 1px solid $text-primary;
+}

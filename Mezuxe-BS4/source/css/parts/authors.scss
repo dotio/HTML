@@ -1,0 +1,15 @@
+#authors {
+
+	.card:hover {
+		background: $primary;
+		color: #fff;
+
+		.fab {
+			color: #fff;
+		}
+	}
+
+	.fab {
+		color: $primary;
+	}
+}

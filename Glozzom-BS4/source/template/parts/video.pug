@@ -1,0 +1,17 @@
+section#video-play
+	.dark-overlay
+		.row
+			.col
+				.container.p-5
+					a(href="" data-video='https://www.youtube.com/embed/ldZsablWkjA' data-toggle='modal' data-target='#videoModal').video
+						i.fas.fa-play.fa-3x
+					h2 See What We Do
+
+//- Video modal
+.modal.fade#videoModal
+	.modal-dialog
+		.modal-content
+			.modal-body
+				button.close(data-dismiss='modal')
+					span &times;
+				iframe(src="", frameborder="0" height='350' width='100%' allowfullscreen)

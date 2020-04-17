@@ -1,0 +1,131 @@
+.promo{
+	background: url('../images/bg/mainBg.jpg') center center/cover no-repeat;
+	min-height: 800px;
+	padding: 39px 0 62px 0;
+
+	.logo{
+		text-align: center;
+		.logo_text{
+			color: #ffffff;
+			font-size: 15px;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-top: 14px;
+		}
+	}
+
+	h1{
+		color: #f9bf3b;
+		text-align: center;
+		margin-top: 53px;
+		font-size: 41px;
+		font-weight: 900;
+		line-height: 24px;
+		text-transform: uppercase;
+		@include normal {
+			font-size: 31px;
+		}
+		@include tablets{
+			font-size: 21px;
+		}
+		@include phones{
+			font-size: 21px;
+		}
+	}
+
+	.simple{
+		position: relative;
+
+		.title_big{
+			color: #ffffff;
+			font-size: 80px;
+			font-weight: 900;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 21px;
+			@include normal {
+				font-size: 50px;
+			}
+			@include phones{
+				font-size: 50px;
+			}
+			&::before{
+				position: absolute;
+				left: -25px;
+				top: 50%;
+				content: '';
+				height: 2px;
+				width: 292px;
+				background: #fff;
+				@include normal {
+					display: none;
+				}
+				@include tablets{
+					display: none;
+				}
+				@include phones{
+					display: none;
+				}
+			}
+			&::after{
+				position: absolute;
+				right: -25px;
+				top: 50%;
+				content: '';
+				height: 2px;
+				width: 292px;
+				background: #fff;
+				@include normal {
+					display: none;
+				}
+				@include tablets{
+					display: none;
+				}
+				@include phones{
+					display: none;
+				}
+			}
+		}
+	}
+
+	.title{
+		color: #f9bf3b;
+		font-size: 41px;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	.text_promo{
+		color: #ffffff;
+		font-size: 21px;
+		line-height: 28px;
+		margin-top: 23px;
+		text-align: center;
+		font-weight: 300;
+		span{
+			color: #f9bf3b;
+			font-weight: 700
+		}
+		
+	}
+	.center{
+		display: flex;
+		flex-direction: column;
+		justify-self: center;
+		align-items: center;
+	}
+	.more_text{
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 100;
+		text-transform: uppercase;
+		margin-top: 73px;
+	}
+	.more_img{
+		width: 30px;
+		height: 19px;
+		margin-top: 12px;
+	}
+}

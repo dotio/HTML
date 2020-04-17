@@ -1,0 +1,16 @@
+#video-play {
+	position: relative;
+	min-height: 200px;
+	background: url('../img/media.jpg') no-repeat fixed/cover;
+	background-position: 0 -300px;
+	text-align: center;
+	color: #fff;
+
+	a {
+		color: #fff;
+	}
+
+	h2 {
+		margin-top: 20px;
+	}
+}

@@ -1,0 +1,17 @@
+@import 'main/_var';
+@import 'main/_font';
+@import 'main/_base';
+@import 'main/mixin';
+
+// blocks
+@import 'blocks/section-promo';
+@import 'blocks/section-waiting';
+@import 'blocks/section-optimize';
+@import 'blocks/section-finish';
+@import 'blocks/section-gift';
+@import 'blocks/section-web';
+@import 'blocks/footer';
+
+// elements
+@import 'elements/button';
+@import 'elements/menu';

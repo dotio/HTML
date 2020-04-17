@@ -1,0 +1,94 @@
+-
+	var social = [
+		{
+			link: '#',
+			icon: 'fab fa-facebook'
+		},
+		{
+			link: '#',
+			icon: 'fab fa-twitter'
+		},
+		{
+			link: '#',
+			icon: 'fab fa-instagram'
+		},
+		{
+			link: '#',
+			icon: 'fab fa-linkedin'
+		},
+	];
+	var topMenu = [
+		{
+			link: '#',
+			name: 'на главную'
+		},
+		{
+			link: '#',
+			name: 'города'
+		},
+		{
+			link: '#',
+			name: 'для водителей'
+		},
+	];
+	var menuBottom = [
+		{
+			link: '#',
+			name: 'центр поддержки'
+		},
+		{
+			link: '#',
+			name: 'вакансии'
+		},
+		{
+			link: '#',
+			name: 'разработчики'
+		},
+		{
+			link: '#',
+			name: 'блог'
+		},
+		{
+			link: '#',
+			name: 'о нас'
+		},
+	];
+	var apps = [
+		{
+			link: '#',
+			img: './images/bg/icons/app.png'
+		},
+		{
+			link: '#',
+			img: './images/bg/icons/play.png'
+		},
+		{
+			link: '#',
+			img: './images/bg/icons/micr.png'
+		},
+	];
+
+footer.footer
+	.footer_line
+	.footer_content
+		ul.footer_list
+			each val in social
+				li.footer_item
+					a.footer_link(href= val.link)(class= val.icon)
+		.footer_menu
+			ul.footer_menu-top
+				each val in topMenu
+					li.footer_menu-item
+						a.footer_menu-link(href= val.link)= val.name
+			ul.footer_menu-bottom
+				each val in menuBottom
+					li.footer_menu-item
+						a.footer_menu-link(href= val.link)= val.name
+			a.footer_menu-lang(href="#") русский
+		.footer_apps
+			ul.apps_list
+				each val in apps
+					li.apps_item
+						a.apps_link(href= val.link)
+							img(src= val.img, alt= val.link)
+

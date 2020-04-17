@@ -1,0 +1,27 @@
+.gift{
+	min-height: 628px;
+	background-color: #efefef;
+	padding: 87px 0;
+	.gift_img{
+		@include phones{
+			width: 100%;
+		}
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		p{
+			color: #252525;
+			font-size: 30px;
+			font-weight: 400;
+			line-height: 43px;
+			text-align: center;
+			margin-top: 42px;
+		}
+		.btn{
+			margin-top: 52px;
+		}
+	}
+}

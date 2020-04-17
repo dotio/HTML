@@ -1,0 +1,78 @@
+.advantage{
+	padding: 71px 0 65px 0;
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+}
+
+.advantage_block{
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 35px;
+	@include Elarge{
+		align-items: flex-start;
+	}
+	@include large{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.advantage_pic{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 113px;
+	height: 113px;
+	background-color: $main_color;
+	border-radius: 50%;
+	margin-right: 26px;
+	@include large{
+		width: 90px;
+		height:	90px;
+	}
+	@include normal{
+		width: 100px;
+		height: 100px;
+		margin-right: 0;
+	}
+}
+.section_title{
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.section_desc-big{
+	color: #222222;
+}
+
+.advantage_desc{
+	max-width: 341px;
+	@include Elarge{
+		max-width: 300px;
+	}
+
+	.advantage_lead{
+		margin: 0;
+		color: $main_color;
+		font-size: 17px;
+		font-weight: 400;
+		@include normal{
+			font-size: 16px;
+		}
+	}
+	p{
+		color: #202020;
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 21px;
+		margin: 0;
+	}
+}
+

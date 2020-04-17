@@ -1,0 +1,40 @@
+-
+	var content = [
+		{
+			title: 'оформление заказа одним касанием',
+			classSup: 'mobile_block_1'
+		},
+		{
+			title: 'надежная подача',
+			classSup: 'mobile_block_2'
+		},
+		{
+			title: 'прозрачные цены',
+			classSup: 'mobile_block_3'
+		},
+		{
+			title: 'безналичная оплата',
+			classSup: 'mobile_block_4'
+		},
+		{
+			title: 'обратная связь',
+			classSup: 'mobile_block_5'
+		},
+		{
+			title: 'разделить стоимость поездки',
+			classSup: 'mobile_block_6'
+		},
+	];
+
+section.mobile
+	.container
+		h2.section_title Возможности
+		h3.section_desc-big мобильное приложение убер
+		h4.section_desc-small Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
+		.row
+			each val in content
+				.col-md-4
+					.mobile_block(class= val.classSup)
+						.mobile_title= val.title
+						a(href="#").mobile_plus.fas.fa-plus
+					

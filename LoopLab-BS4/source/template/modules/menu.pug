@@ -1,0 +1,8 @@
+-var menu = ["Home","Explore","Create", "Share"]
+-var link = ['#home-section', '#explore-head-section', '#create-head-section', '#share-head-section']
+
+
+ul.navbar-nav.ml-auto
+	-for(var i= 0; i < menu.length; i++)
+		li.nav-item
+			a.nav-link(href= link[i])= menu[i]

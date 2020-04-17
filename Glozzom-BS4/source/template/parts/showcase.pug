@@ -1,0 +1,33 @@
+section#showcase
+	#myCarousel.carousel.slide(data-ride='carousel')
+		ol.carousel-indicators
+			li.active(data-target='#myCarousel' data-slide-to='0')
+			li(data-target='#myCarousel' data-slide-to='1')
+			li(data-target='#myCarousel' data-slide-to='2')
+		.carousel-inner
+			.carousel-item.carousel-image-1.active
+				.container
+					.carousel-caption.d-none.d-sm-block.text-right.mb-5
+						h1.display-3 Heading One
+						p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem corrupti reiciendis adipisci sunt rerum quod deserunt praesentium! Officia, eos.
+						a(href="#").btn.btn-danger.btn-lg Sign Up Now
+
+			.carousel-item.carousel-image-2
+				.container
+					.carousel-caption.d-none.d-sm-block.mb-5
+						h1.display-3 Heading Two
+						p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem corrupti reiciendis adipisci sunt rerum quod deserunt praesentium! Officia, eos.
+						a(href="#").btn.btn-primary.btn-lg Learn More
+
+
+			.carousel-item.carousel-image-3
+				.container
+					.carousel-caption.d-none.d-sm-block.text-right.mb-5
+						h1.display-3 Heading Three
+						p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem corrupti reiciendis adipisci sunt rerum quod deserunt praesentium! Officia, eos.
+						a(href="#").btn.btn-success.btn-lg Learn More
+
+		a.carousel-control-prev(href="#myCarousel" data-slide='prev')
+			span.carousel-control-prev-icon
+		a.carousel-control-next(href="#myCarousel" data-slide='next')
+			span.carousel-control-next-icon

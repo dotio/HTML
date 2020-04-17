@@ -1,0 +1,47 @@
+@import './mixin';
+
+a{
+  text-decoration: none;
+
+}
+li{
+  list-style-type: none;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  line-height: 1.4;
+  font-family: $roboto;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+.section_title{
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 8px 11px;
+  display: inline-block;
+}
+.section_desc-big{
+  margin-top: 38px;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  @include large{
+		font-size: 30px;
+  }
+  @include normal{
+		font-size: 16px;
+	}
+}
+
+.section_desc-small{
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}

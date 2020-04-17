@@ -1,0 +1,29 @@
+#home-section {
+	background: url('../img/home.jpg') no-repeat, fixed, center, center/cover;
+	min-height: 700px;
+	position: relative;
+
+	.card-form {
+		opacity: 0.8;
+	}
+
+	.fas {
+		color: $blue;
+		background: #fff;
+		padding: 5px;
+		border-radius: 5px;
+	}
+}
+
+.dark-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 700px;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.home-inner {
+	padding-top: 150px;
+}

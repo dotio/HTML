@@ -1,0 +1,29 @@
+section#contact.bg-light.py-5
+	.container
+		.row
+			.col-lg-9
+				h3 Get In Touch
+				p.lead Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias id illo rem, dicta veniam eveniet!
+				form
+					.input-group.input-group-lg.mb-3
+						.input-group-prepend
+							span.input-group-text
+								i.fas.fa-user
+						input.form-control(placeholder='Name' type='text')
+
+					.input-group.input-group-lg.mb-3
+						.input-group-prepend
+							span.input-group-text
+								i.fas.fa-envelope
+						input.form-control(placeholder='Email' type='email')
+
+					.input-group.input-group-lg.mb-3
+						.input-group-prepend
+							span.input-group-text
+								i.fas.fa-pencil-alt
+						textarea.form-control(placeholder='Message' row='5')
+
+					input(type="submit", value="submit").btn.btn-primary.btn-block.btn-lg
+
+			.col-lg-3.align-self-center
+				img(src="./img/mlogo.png", alt="logo").img-fluid

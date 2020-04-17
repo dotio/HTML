@@ -1,0 +1,62 @@
+.opportunities{
+	min-height: 896px;
+	background: url('../images/bg/bgMobile.png') center center/cover no-repeat;
+	position: relative;
+	z-index: 1;
+	padding: 57px 0 138px 0;
+	@include normal{
+		min-height: 100%;
+		padding: 50px 0;
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		background: #070716;
+		width: 100%;
+		height:540px;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		@include normal{
+			height: 100%;
+		}
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.section_title{
+		background: #fff;
+		color: #000;
+	}
+	.section_desc-big, .section_desc-small{
+		color: #fff;
+	}
+	figure{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.opportunities_img{
+	margin: 0 auto;
+	margin-top: 56px;
+	@include normal{
+		width: 100%;
+	}
+}
+
+.opportunities_title{
+	text-align: center;
+	color: #222222;
+	font-size: 17px;
+	font-weight: 300;
+	margin: 0;
+	@include normal{
+		color: #fff;
+	}
+}

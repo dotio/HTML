@@ -1,0 +1,138 @@
+.footer{
+	padding: 14px 0 39px 0;
+	
+}
+
+.footer_line{
+	width: 299px;
+	height: 4px;
+	background-color: $main_color;
+	margin: 0 auto;
+}
+
+.footer_content{
+	margin-top: 32px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	@include large{
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+	@include normal{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.footer_list, .footer_menu-top, .footer_menu-bottom, .apps_list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
+
+.apps_list{
+	@include Elarge{
+		flex-direction: column;
+		justify-content: flex-start;
+		
+	}
+	.apps_item{
+		@include Elarge{
+			margin-bottom: 10px;
+		}
+	}
+	@include normal{
+		flex-direction: row;
+		margin-top: 10px;
+	}
+}
+
+.footer_list{
+	@include large{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	@include normal{
+		flex-direction: row;
+		align-items: center;
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+
+.footer_item{
+	width: 32px;
+	height: 32px;
+	background-color: #070716;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 9px;
+	@include large{
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.footer_link{
+		color: #fff;
+	}
+}
+
+.footer_menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@include normal{
+		width: 70%;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+}
+
+.footer_menu-top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+		li{
+			a{
+				color: #070716;
+				font-size: 15px;
+				font-weight: 300;
+				text-transform: uppercase;
+				@include normal{
+					font-size: 11px;
+				}
+			}
+		}
+}
+
+.footer_menu-bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+		li{
+			a{
+				color: #999999;
+				font-size: 11px;
+				font-weight: 300;
+				text-transform: uppercase;
+				@include Elarge{
+					font-size: 8px;
+				}
+				@include normal{
+					font-size: 6px;
+				}
+			}
+		}
+}
+
+.footer_menu-lang{
+	color: $main_color;
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+}

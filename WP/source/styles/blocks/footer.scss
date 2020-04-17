@@ -1,0 +1,41 @@
+footer{
+	min-height: 166px;
+	background-color: #1a1a1a;
+	padding: 61px 0 69px 0;
+	.container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.footer_link{
+	color: #888888;
+	font-size: 15px;
+	font-weight: 300;
+	
+}
+
+.footer_top{
+	margin-bottom: 10px;
+	@include phones{
+		text-align: center;
+	}
+	.footer_link{
+		text-decoration: underline;
+		margin-left: 20px;
+		position: relative;
+		&:first-child{
+			&:after{
+				position: absolute;
+				right: -11px;
+				top: 2px;
+				content: '';
+				height: 15px;
+				width: 1px;
+				background: #888888;
+			}
+		}
+	}
+}

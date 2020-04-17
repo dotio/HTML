@@ -1,0 +1,75 @@
+.condition{
+	padding: 68px 0 84px 0;
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.condition_block{
+	color: #222222;
+	font-size: 17px;
+	font-weight: 300;	
+	@include normal{
+		font-size: 14px;
+	}
+	
+	.condition_list{
+		width: 100%;
+		.condition_item{
+			position: relative;
+			padding: 10px 0;
+			&::before{
+				content: '';
+				position: absolute;
+				width: 22px;
+				height: 22px;
+				left: -35px;
+				
+			}
+
+		}
+	}
+}
+
+.condition_desc{
+	color: #1ca8c3;
+	font-weight: 300;
+	font-size: 17px;
+	
+}
+
+.condition_title{
+	font-size: 22px;
+	font-weight: 400;
+	@include normal{
+		font-size: 16px;
+	}
+}
+
+.condition_block-blue{
+	margin-top: 33px;
+	//position: relative;
+ .condition_title{
+	color: $main_color;
+ }
+ .condition_item{
+	 &::before{
+		background: url('../images/bg/icons/check-b.png') center center/cover no-repeat;
+	 }
+ }
+}
+
+.condition_block-red{
+	margin-top: 62px;
+	.condition_title{
+		color: $secondary_color;
+	 }
+	 .condition_item{
+		&::before{
+		 background: url('../images/bg/icons/check-r.png') center center/cover no-repeat;
+		}
+	}
+}

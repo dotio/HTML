@@ -1,0 +1,67 @@
+.optimize{
+	min-height: 550px;
+	padding: 102px 0 107px 0;
+	.container{
+		position: relative;
+	}
+}
+
+.optimize_title{
+	margin-left: 391px;
+	margin-bottom: 25px;
+	color: #299cbd;
+	font-size: 28px;
+	font-weight: 900;
+	text-transform: uppercase;
+	@include tablets{
+		margin-left: 0;
+	}
+	@include normal{
+		margin-left: 0;
+	}
+	@include phones{
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+.optimize_textBlock{
+	margin-left: 391px;
+	@include tablets{
+		margin-left: 0;
+	}
+	@include normal{
+		margin-left: 0;
+	}
+	@include phones{
+		margin-left: 0;
+	}
+	.optimize_text{
+		color: #4a4a4a;
+		font-size: 17px;
+		font-weight: 300;
+		line-height: 27px;
+		font-weight: 300;
+		margin-top: 10px;
+		z-index: 9;
+	}
+	.optimize_text-bold{
+		font-weight: 700;
+	}
+}
+
+.optimize_img{
+	z-index: -1;
+	position: absolute;
+	top: -48px;
+	left: -240px;
+	@include tablets{
+		display: none;
+	}
+	@include normal{
+		display: none;
+	}
+	@include phones{
+		display: none;
+	}
+}

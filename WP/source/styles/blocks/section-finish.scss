@@ -1,0 +1,46 @@
+.finish{
+	background: url('../images/bg/bgFinish.jpg') center center/cover no-repeat;
+	min-height: 447px;
+	padding: 86px 0 79px 0;
+	.section_title{
+		color: #fff;
+	}
+}
+
+.finish_wrapper{
+	margin-top: 41px;
+	display: flex;
+	justify-content: space-between;
+	@include phones{
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.finish_item{
+	width: 204px;
+	@include phones{
+		width: 100%;
+		margin-top: 20px;
+	}
+	figure{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 115px;
+		height: 115px;
+		background-color: #b4e2ff;
+		border-radius: 50%;
+		margin: 0 auto;
+
+	}
+}
+
+.finish_title{
+	color: #efefef;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 26px;
+}
