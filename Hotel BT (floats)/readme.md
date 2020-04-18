@@ -1,12 +1,8 @@
-# Hotel
+# Hotel BT
 
-This site is &rarr; [here](https://dotio.github.io/HTML-Hotel/index.html)
+Multi-page adaptive theme
 
-### Description:
+## Project Specifications
 
-> It's responsive multipage theme vs floats & pure css
-
-#### Under the hood:
-
-1. Floats
-2. Pure Css
+- Floats
+- Pure CSS

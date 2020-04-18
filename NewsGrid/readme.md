@@ -1,12 +1,8 @@
-# News
+# NewsGrid
 
-This site is &rarr; [here](https://dotio.github.io/HTML-News/index.html)
+Adaptive multi-page theme
 
-### Description:
+## Project Specifications
 
-> It's responsive multipage theme vs grid
-
-#### Under the hood:
-
-1. Grid
-2. Pure Css
+- Grid
+- Pure CSS
