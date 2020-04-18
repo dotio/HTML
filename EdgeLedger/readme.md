@@ -1,12 +1,9 @@
-# Flex Landing
+# EdgeLedger Landing
 
-This site is &rarr; [here](https://dotio.github.io/HTML-FlexLanding/)
+Simple adaptive landing
 
-### Description:
+## Project Specifications
 
-> It's responsive landing vs pure css & flexbox
-
-#### Under the hood:
-
-1. Pure Css
-2. Some scripts
+- Pure CSS
+- FlexBox
+- Simple Scripts
